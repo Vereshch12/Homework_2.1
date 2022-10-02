@@ -15,6 +15,10 @@ public class Main {
         value[0] = 99;
     }
 
+    public static void changePerson(Person person){
+        person = new Person("Ilya", "Lagutenko");
+    }
+
     public static void arrayOutput (Integer [] array){// вывод массива
         System.out.print("valueIntegerArray = ");
         for (int i = 0; i < array.length; i++){
@@ -52,5 +56,14 @@ public class Main {
         arrayOutput(valueIntegerArray);
         changeValueIntegerFirstElementOfArray(valueIntegerArray);
         arrayOutput(valueIntegerArray);
+
+        System.out.println();
+
+        //задание №9
+        Person person = new Person("Lyapis", "Trubetskoy");
+        System.out.println("person = " + person);
+        changePerson(person);
+        System.out.println("person = " + person);
+
     }
 }
