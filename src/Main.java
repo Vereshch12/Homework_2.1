@@ -15,7 +15,7 @@ public class Main {
         value[0] = 99;
     }
 
-    public static void changePerson(Person person){
+    public static void changePerson(Person person){ //к заданию 9
         person = new Person("Ilya", "Lagutenko");
     }
 
