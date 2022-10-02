@@ -11,6 +11,10 @@ public class Main {
         value = new Integer[] {3, 4};
     }
 
+    public static void changeValueIntegerFirstElementOfArray (Integer[] value){//к заданию 8
+        value[0] = 99;
+    }
+
     public static void arrayOutput (Integer [] array){// вывод массива
         System.out.print("valueIntegerArray = ");
         for (int i = 0; i < array.length; i++){
@@ -42,7 +46,11 @@ public class Main {
         changeValueIntegerArray(valueIntegerArray);
         arrayOutput(valueIntegerArray);
 
-        //Задание №8
+        System.out.println();
 
+        //Задание №8
+        arrayOutput(valueIntegerArray);
+        changeValueIntegerFirstElementOfArray(valueIntegerArray);
+        arrayOutput(valueIntegerArray);
     }
 }
